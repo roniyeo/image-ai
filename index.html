@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Image AI Generator</title>
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Generate your Image">
+            <button id="searchBtn">
+                <div id="loadingAnimation" class="loader"></div>
+                <img id="searchBtnIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFN0lEQVR4nO1bXWwUVRSexBJr9t7W0kQfjL5oWxKjLz6hNUIoxjcVrb4oxL8aEjUxvuzcu3Ur1oBRYoKIVqONomls1nOmWKmSaCsPVPpDfyKCKJSCAQUtpQ20pbu95s42bVO2nZmdnztj/JKTbDYzs/t999x7zz3njKb9D39B41BKmPEw5VhHOTYRjr2UwSnCYYRymJFmfja/w155jbzWvCcOpVoUQfTUKsrgDcqhjzLMUI4iL2OYIQwOUY71NGFUaKFGTcMKymET4Xgwb8IWRhj8RJmxUUu2F2ihQU3DCsJhM+Ew5BfxHEKcIByfVy4E0fFeymAwKOJXGwwQDpXBM3+5+TrK4IPsIqaK/JwIM5ThLi3ZWBgId5owKijDfvXErxLicCzRcruv5GM6riMcxtSTzW2EwcWYbqz1hTxJ4EOU4YRqkpbGcCqmw2PekudQTTmmlZOzb2nC8BFPyMd0Yy3lMBkCUo49oUj/ar27kddTq8I8562McByliVRZfuyTjYVmKBsCIu48AQbltu2YPzX3+RAQ8EQE3OmIPOFQGY4gxyszudxt0/XbC7wIdFa+2iKS3x0WP/95UUxOZ8TZsQnxac9Jsfrd7xV5AQzKc4ud0d/s9sfKtrWJgTOjIhcyMzPirY5flYhAGNbYOdkNufmR8m1t4tj5cWGFV74eCF4AjseXPUFSDpuCIC/x96Upc5oo8IQnl3Z/hl35PvjWrXvFkb/GhBNUvteuwgsO5B79OJQHMfILsbGpS4UHiJzpNWrm8IIjL/F0c7caAThsySEA9gfh9mEQgHDoXuz+pU6zt27Jq/UATBfHW0vmF78EbAiavGIBhMxvaPPbn1m08H3OL4aMDF8y+lzZC3hIVH/WKW6ub3UmAMPahQI0BU3ea0ylM+Kd/cdESa1hV4DP56dAtiS17A03vd4qjp5z7/Z+Y3fvsPOFkDI8bXXDx11DIip44KP9dgQYXugBo8tdfONre8TEdFpEBZ90DdkRYGRhEDS93MVr3u8QUcLB4X+spwGDadsCrGv4UUQJPadHnAlALKbALfXfiHRmRkQFTX2nnE4BtFwEW385I6KCx3d3Ol4Ee61uuHP7PnHh8hURdnQcPyeKE4bDbZDbC4TkWjA2OS3Cim+PnjXjFceBEHUQCld5KIIcLbllubWtPxwR939ovfcvGQqTbBOT7Zu98gSlhyEGD84JUJRsXun0OOyFCKE5DkvkUwZzK4KyhAjDLm0xqGxFy+NhbkRQ6AF1niZFq/IU4akvFQkQh3ItF4iLHr98PGG9w5Xb17S4hGxCdPNw6QnjNkW4NJW2vWd7ajo8oS1bGmNwIggR3lZQH7QsjUnIDky3PyRFkKWvpSDPFSrKYoThs1pQ5fGKN9tEavAPcfnKfCLlt/PjZiLTTqzuS3ncbmst0VP3eNUgcUPdHnHH9n1mKj1w0nPkMUPjsFpzAspwl7I/7LERBjsckTeRbCyc7dUX0TYYyKtJSkIGDLL9NMIjf6Eo3nKb5gYxjmsi0SKbq2WWG1WaFyAJ49HItcomYIMn5CPXLM1h0vNm6YXTwSqDrHrOEx3u0/wETaTKwthCK3cs1wueoz5ihjtD0U2afbVuh/bi3mu1oFFci3e56SzzgHy//RZYv5BsLyAcnpMnreDcHX8nHJ/Rqpuv0UKDZHuBbEIkHDt9I87xgHmeV/2+oBWy6TXYIqsvLuOH9Owz6vJ/8UExiuOtJTIHLwsRhMMXhGEPYXgy+8I0ZsxFjMPI7Hfds9fUynuKk3i96v+v/dfxL/dljhm8zMRUAAAAAElFTkSuQmCC">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="imageGrid"></div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
